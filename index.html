@@ -2,6 +2,14 @@
 <html>
 <body>
 <h1>Hello World</h1>
+
+Will make for joslyn a page for pyton also but i will focus now on what i learn on kubernetes.
+kubectl apply --dry-run=client -f my-resource.yaml > dry-run-output.txt
+
+is will save the dry run output to the dry-run-output.txt file in your current directory.
+The main limitation of the dry run feature is that it only validates the configuration on the client-side. It does not check the actual state of the Kubernetes cluster or any dependencies that the resources might have. Some issues might only be detected when the resources are actually applied to the cluster.
+Additionally, the dry run feature is limited to the apply command. Other Kubernetes commands, such as delete or scale, do not have a dry run option. If you need to test these types of operations, you may need to use alternative methods, such as running the commands in a development or staging environment.
+
 <p>I'm hosted with GitHub Pages.</p>
 </body>
 </html>
